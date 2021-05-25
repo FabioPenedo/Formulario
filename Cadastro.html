@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/cadastro.css" />
+        <link rel="stylesheet" href="assets/css/normalize.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400&family=Open+Sans+Condensed:wght@300&family=Playfair+Display&family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+        <title>Cadastrar</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="login">
+                <!-----Cabeçalho------->
+                <header>
+                    <img src="assets/images/f5.png" alt="" width="100">
+                    <h2>Bem-vindo!</h2>
+                    <p>Cadastre-se</p>
+                </header>
+                <!--------------------->
+
+                <!-------Corpo--------->
+                <section>
+                    <main>
+                       <form action="" method="post">
+                           <fieldset>
+                                <label>
+                                    Nome:<br/>
+                                    <input type="text" name="Nome"  placeholder="Nome">
+                                </label>
+                                <label><br/>
+                                    Sobrenome:<br/>
+                                    <input type="text" name="Sobrenome" required placeholder="Sobrenome">
+                                </label>
+                                <label><br/>
+                                    Email:<br/>
+                                    <input type="email" name="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="nome@email.com">
+                                </label>
+                                <label><br/>
+                                    Senha:<br/>
+                                    <input type="passwords" required minlength="8" placeholder="Digite a senha">
+                                </label>
+                                <label><br/>
+                                    Confirmar Senha:<br/>
+                                    <input type="passwords" required minlength="8" placeholder="Confirme a senha">
+                                </label>
+                                <label><br/>
+                                    Nascimento:<br/>
+                                    <input type="date" required >
+                                </label>
+                                <label><br/>
+                                    Sexo:<br/>
+                                    <select name="Sexo">
+                                        <option selected></option>
+                                        <option>Masculino</option>
+                                        <option>Feminino</option>
+                                    </select>
+                                </label><br/>
+                                <a href="index.html">Fazer Login</a>
+                                <input class="botao" type="submit" name="Registrar" value="Registrar">
+                            </fieldset>
+                       </form>
+                    </main>
+                </section>
+                <!--------------------->
+            </div>
+        </div>
+
+        <!-----Rodape------->
+        <footer>
+            <div class="rodape">
+                <div class="banner_r">Desenvolvido por: <a href="https://github.com/FabioPenedo" target="_blank">Fabio Penedo</a></div>
+            </div>
+        </footer>
+        <!------------------->
+    </body>
+</html>
