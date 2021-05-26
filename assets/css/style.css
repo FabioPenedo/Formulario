@@ -64,7 +64,8 @@ header img {
 }
 
 .banner img {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
 }
 
 form {
@@ -131,6 +132,7 @@ a:hover {
 /*----------------*/
 
 /*----Reponsividade---*/
+
 @media(max-width: 1480px) {
     .banner {
         margin-right: 10vw;
@@ -138,26 +140,22 @@ a:hover {
 }
 
 @media(max-width: 1330px) {
-    .banner img {
-        width: 720px;
+    .banner {
+        margin-right: 5vw;
+    }
+
+    .login {
+        margin-right: 20px;
     }
 }
 
-@media(max-width: 1250px) {
-    .banner img {
-        width: 650px;
+@media(max-height:650px) {
+    .container {
+        height: auto;
     }
-}
 
-@media(max-width: 1150px) {
-    .banner img {
-        width: 550px;
-    }
-}
-
-@media(max-width: 1050px) {
-    .banner img {
-        width: 450px;
+    .banner {
+        height: auto;
     }
 }
 
@@ -179,6 +177,7 @@ a:hover {
     .login {
         box-shadow: none;
         width: 100%;
+        margin: 0;
     }
 }
 /*----------------*/
